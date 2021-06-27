@@ -44,8 +44,10 @@ num4 = int(input('Enter more than 5 digit number: '))
 def odd_even_count(n):
     odd_count = 0
     even_count = 0
-    while n != 0:
-        last_digit = n % 10
+    for last_digit in str(n):
+        last_digit = int(last_digit)
+    # while n != 0:
+    #     last_digit = n % 10
         if last_digit % 2 == 0:
             odd_count += 1
         else:
